@@ -1,0 +1,142 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+body{
+    background-image: url(../img/b.jpg);
+    background-attachment: fixed;
+    background-size: 100%;
+    
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #00adb5;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.logo{
+    color: rgb(226, 226, 226);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 20px;
+}
+.nav-link{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    
+}
+.nav-link a{
+    text-decoration: none;
+    color: rgb(226, 226, 226);
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.nav-link :hover{
+    color: #e23e57;
+    transition: ease-in 0.7s;
+}
+.nav-link li{
+  list-style: none;
+  
+}
+
+.burger{
+    display: none;
+}
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: rgb(226, 226, 226);
+    margin: 5px;
+}
+
+@media screen and (max-width:1020px){
+    .nav-link{
+        display: flex;
+        justify-content: space-around;
+        width: 40%;
+        
+    }
+}
+
+
+@media screen and (max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
+    .nav-link{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: #5d4954;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 25%;
+        transform: translate(100%);
+        transition: transform ease-in 0.5s;
+    }
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+    .nav-link li{
+        opacity: 0;
+
+    }
+
+}
+.good h1{
+    color: #c9d6df;
+    margin-left: 45%;
+    margin-top: 15%;
+    font-family: 'Expletus Sans', cursive;
+
+    display: flex;
+    font-size: 50px;
+    text-shadow: 7px 5px 5px black;
+}
+.good h2{
+    color: #c9d6df; 
+    margin-left: 45%;
+    margin-top: 1.5%;
+    font-family: 'Expletus Sans', cursive;
+    font-size: 40px;
+    text-shadow: 7px 5px 5px black;
+
+}
+.button{
+   position: relative;
+   display: inline-block;
+   padding: 15px 30px;
+   color: #fff;
+   letter-spacing: 4px;
+   font-size: 24px;
+   text-decoration: none;
+   overflow: hidden;
+   transition: 0.2s;
+   text-align: center;
+   margin-left: 46%;
+   margin-top: 2%;
+   background-color: black;
+   
+   
+}
+.button:hover{
+    background: #a945c7;
+    box-shadow:  0 0 10px #a945c7, 0 0 40px #a945c7, 0 0 80px #a945c7;
+    transition-delay: 0.5s;
+}
+.nav-active{
+    transform: translate(0);
+}
